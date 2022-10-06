@@ -110,15 +110,18 @@ The default searchdepth is 20
 The default bookdepth is 0 (given in half moves)  
 The default number of variations (multi engine lines) is 1 (only best move)  
 
-`tools/analyse.sh [inputdir] [outputdir] [enginepath] [searchdepth] [bookdepth] [num_variations]`
+`tools/analysisbeads.sh [inputdir] [outputdir] [enginepath] [searchdepth] [bookdepth] [num_variations]`
 
 so for example if you want to analyse all players in games/players with stockfish 8 using a depth of 12 and save the results in results_sf8
 
-`tools/analyse.sh games/players results_sf8 engines/stockfish_8 12 0 1`
+`tools/analysisbeads.sh games/players results_sf8 engines/stockfish_8 12 0 1`
 
 The script has a very crude progress meter, it tells you when a new player is started and at what time.  
 Using this info you can estimate how long it will take to finish.
 
+
+You can also run windows .exe using wine I tested it with stockfish 14 for windows:  
+`tools/analysisbeads.sh games/players "results_sf14win" "wine engines/stockfish_14_x64_avx2.exe"`
 
 
 ### 4. CPL (Centi-Pawn-Loss) Analysis
