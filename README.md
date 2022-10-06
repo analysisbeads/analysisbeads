@@ -129,13 +129,13 @@ They create a tab seperated values file (.csv) so data can easily be processed f
 
 How to get acpl-data of a player sorted by date (includes event, result, enginecorrelation, etc)  
 Manually for individual players:  
-`rm -f temp/*`  the temp dir has to be cleared for parallel processing
-`find "results/Abdusattorov,Nodirbek/" -name "*.xml" -print0 | xargs -0 -n1 -P8 "tools/acpl.py"`  
-`find "temp/" -name "*.xml" -print0 | sort -z | xargs -0 cat > "abdusattorov_acpl.csv"`
+`rm -f temp/*`  the temp dir has to be cleared for parallel processing  
+`find "results/Abdusattorov,Nodirbek/" -name "*.xml" -print0 | xargs -0 -n1 -P8 "tools/acpl.py"`    
+`find "temp/" -name "*.xml" -print0 | sort -z | xargs -0 cat > "abdusattorov_acpl.csv"`  
 
 There is a script to do this for all players and is much easier to use:  
 `tools/acplbatch.sh results`  
-This creates a .csv for each dir (aka player) in results.
+This creates a .csv for each dir (aka player) in results.  
 
 
 Same procedure for cpl-data for all moves in all games (games are in columns and moves are in rows).  
@@ -152,7 +152,7 @@ After watching the video of the brasilian guy (Rafael Leite) I also added a scri
 
 Output: 25.17   18.18
 
-This shows that Niemann improved his ACPL over his last ~200 Elo gained (from 2019 to2022) contrary to the claim in the video.
+This shows that Niemann improved his ACPL over his last ~200 Elo gained (from 2019 to 2022) contrary to the claim in the video.
 
 
 
