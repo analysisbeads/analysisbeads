@@ -1,3 +1,14 @@
+Get the tools and the classical games including some engine from this zip file:  
+https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/analysisbeads.zip
+
+If you just want to play with the final data (ACPL and CPL for the 14 players analysed):  
+https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/csv.zip
+
+The compiled thisweekinchess.com archive:  
+https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/2012-2019.zip  
+https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/2019-2022.zip
+
+
 ### Analysisbeads
 
 Instructions how to extract and analyse chess games in PGN format on Debian Linux.
