@@ -120,6 +120,7 @@ The script has a very crude progress meter, it tells you when a new player is st
 Using this info you can estimate how long it will take to finish.
 
 
+(wine is currently broken, need to fix analysisbeads.sh to accept wine)  
 You can also run windows .exe using wine I tested it with stockfish 14 for windows:  
 `tools/analysisbeads.sh games/players "results_sf14win" "wine engines/stockfish_14_x64_avx2.exe"`
 
