@@ -1,5 +1,5 @@
 Get the tools and the classical games including some engine from this zip file:  
-https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/analysisbeads.zip
+https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/analysisbeads.tar.gz
 
 If you just want to play with the final data (ACPL and CPL for the 14 players analysed):  
 https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/csv.zip
@@ -37,7 +37,7 @@ This archive is included in the release package, so you don't have to hammer the
 
 ### 2. Data Preparation
 
-Extract the [release archive](https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/analysisbeads.zip) and navigate into the extracted dir in a terminal window.  
+Extract the [release archive](https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/analysisbeads.tar.gz) and navigate into the extracted dir in a terminal window.  
 For example on my machine thats:  
 `cd /home/centipawn/chess/`
 
@@ -120,7 +120,6 @@ The script has a very crude progress meter, it tells you when a new player is st
 Using this info you can estimate how long it will take to finish.
 
 
-(wine is currently broken, need to fix analysisbeads.sh to accept wine)  
 You can also run windows .exe using wine I tested it with stockfish 14 for windows:  
 `tools/analysisbeads.sh games/players "results_sf14win" "wine engines/stockfish_14_x64_avx2.exe"`
 
