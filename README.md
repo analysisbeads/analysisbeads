@@ -5,8 +5,8 @@ If you just want to play with the final data (ACPL and CPL for the 14 players an
 https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/csv.zip
 
 The compiled thisweekinchess.com archive:  
-https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/2012-2019.zip  
-https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/2019-2022.zip
+https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/2012-2019.pgn.zip  
+https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/2019-2022.pgn.zip
 
 
 ### Analysisbeads
@@ -37,7 +37,7 @@ This archive is included in the release package, so you don't have to hammer the
 
 ### 2. Data Preparation
 
-Extract the release archive and navigate into the extracted dir in a terminal window.  
+Extract the [release archive](https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/analysisbeads.zip) and navigate into the extracted dir in a terminal window.  
 For example on my machine thats:  
 `cd /home/centipawn/chess/`
 
@@ -45,7 +45,7 @@ If you're in the right dir `ls` should show you these dirs:
 engines games results results_sf11 temp tools
 
 The games directory contains several .pgn files you can extract the ones you're want from.  
-I worked with 2019-2022.pgn for all players except Rausis, I used 2012-2019 for him to get more games.
+I worked with [2019-2022.pgn](https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/2019-2022.pgn.zip) for all players except Rausis, I used [2012-2019](https://github.com/analysisbeads/analysisbeads/releases/download/v0.69/2012-2019.pgn.zip) for him to get more games.
 
 **First step is to separate the games into offline and online based on "Site" tag of the pgn (INT = online)**  
 `tools/pgn-extract -t "tools/filters/online.txt" -n "games/offline.pgn" -o "games/online.pgn" "games/2019-2022.pgn"`
